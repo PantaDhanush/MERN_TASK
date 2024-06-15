@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="Task2.css">
+    <style>
+    #Outer{
+    border: solid black;
+    width: 189px;
+    height: 157px;
+    padding: 8px; 
+    padding-bottom: 0px;
+    }
+    #Home{
+    background-color: orange;
+    color: white;
+    }
+    #navbar{
+    background-color: skyblue;
+    width: 190px;
+    height: 148px;
+    font-size:25px;
+    color: blue;
+    }
+    #navbar div:hover{
+        background-color: orange;
+    }
+    #navbar div a:hover{
+        color: white;
+    }
+    a{
+    text-decoration: none;
+    }
+    #container{
+    position: absolute;
+    top: 67px;
+    left: 350px;
+    }
+    #inner{
+    border: solid black;
+    width: 354px;
+    height: 30px;
+    padding: 8px;
+    }
+    #horizontalnavbar{
+    background-color: rgb(230, 228, 228);
+    }
+    #horizontalnavbar a{
+        border-right: 1px solid blue;
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 25px;
+        display: inline-block;
+    }
+    #horizontalnavbar a:hover{
+        background-color: grey;
+        color: white;
+    }
+    #horizontalhome{
+        background-color: gray;
+        color: white;
+        margin-right: -6px;
+    }
+    </style>
+</head>
+<body>
+    <h3>Vertical navigation bar</h3>
+    <div id="Outer">
+    <nav id="navbar">
+        <div id="Home"><a href="#" style="color: white;">Home</a></div>
+        <div id="Java"><a href="#">Java</a></div>
+        <div id="CSS"><a href="#">CSS</a></div>
+        <div id="HTML"><a href="#">HTML</a></div>
+        <div id="Bootstrap"><a href="#">Bootstrap</a></div>
+    </nav>
+    </div>
+    
+    <div id="container">
+    <h3>Horizontal navigation bar</h3>
+    <div id="inner">
+    <nav id="horizontalnavbar">
+        <a href="#"id="horizontalhome">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#" style="border-right: 1px solid blue; padding-right: 4px;">CSS</a>
+    </nav>
+    </div>
+    </div>
+</body>
+</html>
